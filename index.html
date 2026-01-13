@@ -1,11 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gestor de Productos (API + Storage)</title>
+    <link rel="stylesheet" href="./estilo.css">
 </head>
+
 <body>
-    <script src="sistema_interativo.js"></script>
+    <h1>Inventario de Productos</h1>
+    <p>Gestiona tus productos. Los datos se sincronizan con Local Storage y (opcionalmente) con una API.</p>
+
+    <!-- Formulario de Captura -->
+    <div class="input-group">
+        <input type="text" id="nombreProducto" placeholder="Nombre del producto (ej: Laptop)">
+        <input type="number" id="precioProducto" placeholder="Precio ($)">
+        <button id="btnAgregar">Agregar Producto</button>
+    </div>
+
+    <!-- Renderizado Dinámico -->
+    <h3>Lista de Productos:</h3>
+    <ul id="listaProductos">
+        <!-- Los productos se insertarán aquí dinámicamente -->
+    </ul>
+
+    <script src="semana4.js"></script>
 </body>
+
 </html>
